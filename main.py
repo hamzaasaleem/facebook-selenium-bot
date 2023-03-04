@@ -183,6 +183,7 @@ except:
         driver.find_element(By.ID, "audio-response").send_keys(key.lower())
         driver.find_element(By.ID, "audio-response").send_keys(Keys.ENTER)
 
+
     except sr.UnknownValueError:
         print("Speech recognition could not understand audio")
         driver.quit()
